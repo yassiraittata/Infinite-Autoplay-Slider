@@ -1,0 +1,44 @@
+body {
+  background-color: #55f;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slideshow {
+  /* width of child time number of children element */
+  width: calc(250px * 20);
+  margin-top: 25vh;
+  display: flex;
+  overflow: hidden;
+  animation: 30s linear infinite slidein;
+}
+
+/* Animation */
+@keyframes slidein {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+
+.slide {
+  width: 250px;
+  padding: 5px;
+  height: 150px;
+  font-size: 24px;
+}
+
+.slide-item {
+  background-color: purple;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
